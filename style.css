@@ -1,0 +1,294 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: "Playfair Display",serif;
+}
+
+#container{
+    width: 100%;
+    height:100vh;
+    position: relative;/*placed on in its normal position*/
+}
+
+#navbar{
+    display:flex;/*to make child element into inline*/
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;/*it apply for child tag horizontaly*/
+    align-items: center;/*to place the child content vertically center*/
+}
+
+#logo{
+    width: 130px;
+}
+
+.listItem{
+    list-style: none;/*remove the styling of listItem*/
+    display: inline;
+    margin: 10px 20px;
+    font-weight: 700;/*to increase boldness*/
+}
+
+li a:hover{
+    color: red;
+   
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+
+#title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#lastname{
+    color: orange;
+}
+
+#title a{background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+}
+#images:hover #shape{
+    bottom: 70px;
+}
+#images:hover #girl{
+    left: 40%;
+}
+
+h3{
+    color: green;
+}
+
+#about{
+    margin-top: 18%;
+    margin-left: 8%;
+}
+
+#heading{
+    text-align: center;
+}
+
+#heading h2{
+    font-size: 30px;
+}
+
+#heading p{
+    font-size: 20px;
+    color: green;
+    
+}
+
+#content{
+    display: grid;
+    grid-template-columns:repeat(2, 2fr);
+    gap:2rem;
+    margin-top: 2rem;
+
+}
+
+#content_img{
+    width: 80%;
+}
+
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#information{
+    margin-top: 2rem;
+}
+
+.info{
+    margin-top: 1rem;
+}
+
+.info span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin-top: 33%;
+    margin-left: 8%;
+}
+
+#heading2{
+    text-align: center;
+}
+
+#heading2 p{
+    font-size: 20px;
+    color: green;
+    
+}
+
+#skill{margin-top: 8% 8% 0 8%;
+}
+
+#skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+#skill_img{
+    width: 90%;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+
+.bar-container span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.bar{
+    width: 90%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#html_bar{
+    width: 85%;
+    background-color: orange;
+}
+
+#css_bar{
+    width: 78%;
+    background-color: orange;
+
+}
+#js_bar{
+    width: 79%;
+    background-color: orange;
+
+
+}
+#react_bar{
+    width: 75%;
+    background-color: orange;
+
+}
+#contact{
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+#heading3{
+    text-align: center;
+}
+
+#heading3 p{
+    font-size: 20px;
+    color: green;
+}   
+
+
+
+.icon_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 0px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+
+.icon i{
+    color: black;
+   
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(255, 242, 0),rgb(255, 115, 0) );
+
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+    10%{
+         transform:rotate(15deg);
+    }
+    20%{
+        transform:rotate(-15deg);
+    }
+    30%{
+        transform:rotate(15deg);
+    }
+    40%{
+        transform:rotate(-15deg);
+    }
+
+}
+
+footer{
+    padding: 3rem 0px;
+}
+footer p{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.up-arrow{
+    background-image: linear-gradient(to bottom right,
+    yellow, rgba(255, 0, 0, 0.915));
+    float: right;
+    margin: 13px 50px 50px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
